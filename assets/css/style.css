@@ -612,12 +612,12 @@ img {
     border: 1px solid#ddd;
 }
 .price{
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .price small{
-    font-size: 18px;
+    font-size: 22px;
 }
 .pricing-block ul{
     margin-bottom: 30px;
