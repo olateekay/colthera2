@@ -1,3 +1,18 @@
+<!-- <?php
+
+if($_POST["submit"]) {
+    $recipient="ogunronbi.tobi@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+$thankYou="
+<p>Thank you! Your message has been sent.</p>
+"; } ?> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +25,8 @@
 
     <meta name="description" content="Colthera - Onepage portfolio Site" />
     <meta name="author" content="esrat" />
+    <!-- add icon link -->
+    <link rel="icon" type="image/x-ico" href="./assets/img/favicon.ico" />
 
     <!-- Fontawsome Icon CSS -->
     <link rel="stylesheet" href="assets/css/all.css" />
@@ -26,7 +43,7 @@
     <!-- NAVBAR
     ================================================= -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark navbar-togglable  fixed-top "
+      class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top"
       id="mainNav"
     >
       <div class="container">
@@ -76,7 +93,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">
-                Portfolio
+                Photoboard
               </a>
             </li>
 
@@ -85,15 +102,16 @@
                 Pricing
               </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">
                 Contact
               </a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item">
               <a
                 class="nav-link js-scroll-trigger"
                 href="https://twitter.com/biggtobi"
+                target="_blank"
               >
                 Twitter
               </a>
@@ -119,11 +137,11 @@
       <!-- Content -->
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-md-10 col-lg-7 ">
+          <div class="col-md-10 col-lg-7">
             <div class="banner-content">
               <!-- Preheading -->
               <p
-                class="text-warning text-center mb-4 display-4 font-weight-light "
+                class="text-warning text-center mb-4 display-4 font-weight-light"
               >
                 Get <span>Trained And Certified in</span>
               </p>
@@ -147,7 +165,7 @@
                   href="#contact"
                   target="_blank"
                   class="btn btn-primary"
-                  style="background-color: orangered;border-color: orangered;"
+                  style="background-color: orangered; border-color: orangered;"
                 >
                   Contact Now
                 </a>
@@ -177,7 +195,7 @@
             </h2>
 
             <!-- Subheading -->
-            <p class="mb-5 ">
+            <p class="mb-5">
               At Colthera consulting, we pride ourselves in the impact we have
               already made in less than half a decade. We have delivered
               customised trainings to over 4500 professionals across several
@@ -195,7 +213,7 @@
               <div class="feature-icon-block mb-4">
                 <i class="fa fa-gem"></i>
               </div>
-              <h1 class="mb-3 ">4500+</h1>
+              <h1 class="mb-3">4500+</h1>
               <p>Trained</p>
             </div>
           </div>
@@ -238,14 +256,14 @@
     ================================================== -->
     <section class="section bg-light" id="about">
       <div class="container">
-        <div class="row ">
+        <div class="row">
           <div class="col-lg-6">
             <div class="about-img">
               <img src="assets/img/IMG_0996.jpg" alt="" class="img-fluid" />
             </div>
           </div>
 
-          <div class="col-lg-6 ">
+          <div class="col-lg-6">
             <div class="about-content">
               <h2 class="display-5">
                 TAKE A STEP WITH US
@@ -260,7 +278,7 @@
                 sectors.
               </p>
 
-              <ul class="list-unstyled skill-list ">
+              <ul class="list-unstyled skill-list">
                 <li>Industry knowledge</li>
                 <li>Practical Approach</li>
                 <li>Interactive Class</li>
@@ -278,9 +296,9 @@
       </div>
 
       <div class="container">
-        <div class="row mt-5 align-items-center ">
+        <div class="row mt-5 align-items-center">
           <div class="col-lg-6 col-md-6">
-            <div class="about-content-2 ">
+            <div class="about-content-2">
               <h2 class="display-5">
                 Mode of Delivery
               </h2>
@@ -291,7 +309,7 @@
 
               <!-- <a href="#" class="btn btn-primary" style="background-color: orangered;border-color: orangered;">Services</a> -->
 
-              <ul class="list-unstyled skill-list ">
+              <ul class="list-unstyled skill-list">
                 <li>Classroom training</li>
                 <li>Individual and group Excercises</li>
                 <li>Scenerio based Activities</li>
@@ -324,12 +342,12 @@
         <!-- / .row -->
 
         <div class="row">
-          <div class="col-lg-4 col-sm-6 col-md-6 mb-4 ">
+          <div class="col-lg-4 col-sm-6 col-md-6 mb-4">
             <div class="service-block d-flex">
-              <div class="service-icon ">
+              <div class="service-icon">
                 <i class="fa fa-laptop"></i>
               </div>
-              <div class="service-content ">
+              <div class="service-content">
                 <h4><span>Introduction to</span> Project Management</h4>
                 <p>
                   Learn the basics of Project Management,hoe the
@@ -496,14 +514,14 @@
     <section class="section" id="pricing">
       <div class="container">
         <div class="row mb-4">
-          <div class="col-md-6 col-lg-4 ">
+          <div class="col-md-6 col-lg-4">
             <!-- Heading -->
-            <h2 class="lg-title mb-2 ">
+            <h2 class="lg-title mb-2">
               Training Options and Cost
             </h2>
 
             <!-- Subheading -->
-            <p class="my-4 ">
+            <p class="my-4">
               No Need to worry about pricing plan. You may have your own custom
               pricing plan .
             </p>
@@ -523,7 +541,7 @@
             <div class="pricing-block">
               <h2>Individual plan</h2>
               <small>From</small>
-              <h3 class="price my-3 "><small>₦</small>95,000</h3>
+              <h3 class="price my-3"><small>₦</small>95,000</h3>
 
               <ul class="list-unstyled">
                 <li>Our Facility</li>
@@ -539,7 +557,7 @@
             <div class="pricing-block">
               <h2>Group/SME plan</h2>
               <small>From</small>
-              <h3 class="price my-3 "><small>₦</small> 105,000</h3>
+              <h3 class="price my-3"><small>₦</small> 105,000</h3>
 
               <ul class="list-unstyled">
                 <li>Your facility/Our Facility</li>
@@ -580,7 +598,7 @@
                     <img
                       src="assets/img/review/IMG_09182.jpg"
                       alt=""
-                      class="img-fluid "
+                      class="img-fluid"
                     />
                   </div>
 
@@ -602,7 +620,7 @@
                     <img
                       src="assets/img/review/tes-2.jpg"
                       alt=""
-                      class="img-fluid "
+                      class="img-fluid"
                     />
                   </div>
 
@@ -624,7 +642,7 @@
                     <img
                       src="assets/img/review/tes-3.jpg"
                       alt=""
-                      class="img-fluid "
+                      class="img-fluid"
                     />
                   </div>
 
@@ -645,7 +663,7 @@
                     <img
                       src="assets/img/review/tes-2.jpg"
                       alt=""
-                      class="img-fluid "
+                      class="img-fluid"
                     />
                   </div>
 
@@ -666,7 +684,7 @@
                     <img
                       src="assets/img/review/tes-2.jpg"
                       alt=""
-                      class="img-fluid "
+                      class="img-fluid"
                     />
                   </div>
 
@@ -721,7 +739,7 @@
                 <div class="col-12">
                   <div
                     class="alert alert-success contact__msg"
-                    style="display: none"
+                    style="display: none;"
                     role="alert"
                   >
                     Your message was sent successfully.
@@ -788,7 +806,10 @@
                       name="submit"
                       type="submit"
                       class="btn btn-primary btn-lg"
-                      style="background-color: orangered; border-color: orangered;"
+                      style="
+                        background-color: orangered;
+                        border-color: orangered;
+                      "
                       value="Submit Now"
                     />
                     <p class="pt-3">* We will not spam on you inbox.</p>
@@ -828,12 +849,12 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="text-white">
+                <a href="#portfolio" class="text-white">
                   Photoboard
                 </a>
               </li>
               <li>
-                <a href="#" class="text-white">
+                <a href="#service" class="text-white">
                   Services
                 </a>
               </li>
