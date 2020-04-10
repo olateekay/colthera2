@@ -1,15 +1,23 @@
 <?php
 
-if($_POST["submit"]) {
-  $recipient="ogunronbi.tobi@gmail.com";
-  $subject="Form to email message";
-  $sender=$_POST["sender"];
-  $senderEmail=$_POST["senderEmail"];
-  $message=$_POST["message"];
+<?php
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
 
-  $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+$email_from = 'ogunronbi.tobi@gmail.com';
+$email_subject = 'New Enquiry Submission';
+$email_body = "User Name: $name.\n".
+                "User Email:$visitor_email.\n".
+                    "User Message: $message.\n";
 
-  mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-$thankYou="
-<p>Thank you! Your message has been sent.</p>
-"; } ?> 
+
+$to = "hello@colthera.com";
+$headers = "From: $email_from \r\n";
+$headers = "Reply-To:$visitor_email \r\n";
+mail($to,$email_subject,$email_body,$headers);
+header("Location: index.html");                    
+
+
+
+?> 
