@@ -8,7 +8,7 @@
     // Success function
     function done_func(response) {
         message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
+        message.text('Your message was sent successfully.');
         setTimeout(function () {
             message.fadeOut();
         }, 2000);
@@ -17,11 +17,11 @@
 
     // fail function
     function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
+        message.fadeIn().removeClass('alert-success').addClass('alert-danger');
+        message.text('Your message not was sent successfully.');
         setTimeout(function () {
             message.fadeOut();
-        }, 2000);
+        }, 20000);
     }
     
     form.submit(function (e) {
